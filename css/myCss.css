@@ -611,3 +611,27 @@ p{
     text-align: justify;
 
 }
+.redesocial {
+    float:right;
+    margin-top:10%;
+}
+.redesocial > a{
+
+    color: #ffffff;
+}
+
+a#twitter:hover {
+background-color:#55acee;
+}
+a#face:hover {
+background-color:#3b5998;
+}
+a#insta:hover {
+background-color:#3f729b;
+}
+a#lkd :hover{
+background-color: #007bb6;
+}
+a#youtube :hover{
+background-color: #CB2027;
+}

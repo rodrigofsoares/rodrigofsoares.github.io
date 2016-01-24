@@ -31,12 +31,43 @@
 
 <body id="page-top" class="index" >
 
+<!--codigo para utilizar plugin do face-->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
     <div class="navbar navbar-default">
 
                <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                    <div class="navbar-header page-scroll">
                       <a href="#page-top"><img  src="img/logoHome.png" class="img-responsive imgHome"></a>
+                   </div>
+
+                   <div class="redesocial visible-lg visible-md">
+
+                       <a id="twitter" class="hvr-bob btn btn-social-icon btn-lg">
+                           <span class="fa fa-twitter "></span>
+                       </a>
+                       <a id="face" class="hvr-bob btn btn-social-icon btn-lg">
+                           <span class="fa fa-facebook"></span>
+                       </a>
+                       <a id="insta" class="hvr-bob btn btn-social-icon btn-lg">
+                           <span class="fa fa-instagram"></span>
+                       </a>
+                       <a id="lkd" class="hvr-bob btn btn-social-icon btn-lg">
+                           <span class="fa fa-linkedin"></span>
+                       </a>
+                       <a id="youtube" class="hvr-bob btn btn-social-icon btn-lg">
+                           <span class="fa fa-youtube"></span>
+                       </a>
+
                    </div>
                </div>
     </div>
@@ -60,38 +91,38 @@
             <!-- menu responsivo icon-->
             <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
 
-                <ul class="nav navbar-nav centralizado col-md-8 col-md-offset-1 ">
+                <ul class="nav navbar-nav centralizado col-md-6 col-md-offset-1 ">
 
                     <li class="nav">
-                        <a href="index.html"><i class="glyphicon glyphicon-home white"></i> Home</a>
+                        <a href="index.html">Home</a>
                     </li>
 
                     <li class="nav">
-                        <a href="sobre.html"><i class="glyphicon glyphicon-book white"></i> Sobre</a>
+                        <a href="sobre.html">Sobre</a>
                     </li>
 
                     <li class="nav active" id="saude">
-                        <a href="#"><i class="glyphicon glyphicon-heart white"></i> Saúde</a>
+                        <a href="#">Saúde</a>
                     </li>
 
                     <li class="nav">
-                        <a><i class="glyphicon glyphicon-alert white"></i> Treino </a>
+                        <a>Treino </a>
                     </li>
 
                     <li class="nav">
-                        <a><i class="glyphicon glyphicon-picture white"></i> Fotos</a>
+                        <a>Fotos</a>
                     </li>
 
                     <li class="nav">
-                        <a> <i class="glyphicon glyphicon-film white"></i> Vídeos</a>
+                        <a>Vídeos</a>
                     </li>
 
                     <li class="nav "id="evento">
-                        <a><i class="glyphicon glyphicon-star white"></i> Eventos</a>
+                        <a>Eventos</a>
                     </li>
 
                     <li class="nav">
-                        <a><i class="glyphicon glyphicon-earphone white"></i> Contatos</a>
+                        <a>Contatos</a>
                     </li>
 
                 </ul>
@@ -108,8 +139,10 @@
             <div class="row">
                 <div class="col-md-2 ">
                    <div class="visible-lg visible-md">
-                       <img src="img/prop.png">
+                       <img class="img-responsive" src="img/prop.png">
                     </div>
+
+
                 </div>
                 <div class="col-md-8">
                      <!--carousel-->
@@ -195,7 +228,7 @@
 
                 <div class="col-md-2 ">
                    <div class="visible-lg">
-                       <img src="img/prop.png">
+                       <img class="img-responsive" src="img/prop.png">
                     </div>                       
                 </div>
    
@@ -203,8 +236,20 @@
             <!--final div row-->
         </div>
         <!--final div container-->
-    </header>
+            <!--plugin face-->
+            <div class="col-md-12 ">
+                <div class="fb-share-button" data-href="https://www.facebook.com/profile.php?id=100010320933347" data-layout="button_count">
+                </div>
+                <div class="fb-follow" data-href="https://www.facebook.com/profile.php?id=100010320933347" data-layout="button_count" data-show-faces="false">
+                </div>
+            </div>
+
+            <!--fim plugin face-->
+        </header>
+
     <!--final Header-->
+
+
 
         <div class="container ">
             <div class="row">
@@ -318,14 +363,9 @@
                             <a class="btn btn-social-icon btn-lg btn-linkedin">
                                 <span class="fa fa-linkedin"></span>
                             </a>
-                            <a class="btn btn-social-icon btn-lg btn-vimeo">
-                                <span class="fa fa-vimeo"></span>
+                            <a class="btn btn-social-icon btn-lg btn-pinterest">
+                                <span class="fa fa-youtube"></span>
                             </a>
-
-
-
-
-
 
                         </div>
 
@@ -333,11 +373,20 @@
                 </div>
             <hr>
             <!--final container 1-->
-            <div class="container col-md-12 text-center ">
-                desenvolvido por softweb 2016
-                <a href="">
-                <span class="fa fa-github"></span>
-                </a>
+            <div style="background-color: #233140" class="container col-md-12 text-center ">
+                <div>
+                    todos os direitos reservados a f2d
+                    <br>
+                    <span>
+                        desenvolvido por softweb 2016
+                        <a href="">
+                            <span class="fa fa-github"></span>
+                        </a>
+                    </span>
+
+
+                </div>
+
             </div>
 
             </div>
