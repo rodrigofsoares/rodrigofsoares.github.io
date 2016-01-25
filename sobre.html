@@ -31,6 +31,16 @@
 </head>
 
 <body id="page-top" class="index" >
+<!--codigo para utilizar plugin do face-->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
     <div class="navbar navbar-default">
 
@@ -43,23 +53,26 @@
 
                    </div>
 
-                   <div style="float: right;margin-top: 10%"class="visible-lg">
-                       <a class="btn btn-social-icon btn-twitter">
-                           <span style="color: #ffffff" class="fa fa-twitter"></span>
+                   <div class="redesocial visible-lg visible-md">
+
+                       <a id="twitter" class="hvr-bob btn btn-social-icon btn-lg">
+                           <span class="fa fa-twitter "></span>
                        </a>
-                       <a class="btn btn-social-icon btn-facebook">
-                           <span style="color: #ffffff" class="fa fa-facebook"></span>
+                       <a id="face" class="hvr-bob btn btn-social-icon btn-lg">
+                           <span class="fa fa-facebook"></span>
                        </a>
-                       <a class="btn btn-social-icon btn-instagram">
-                           <span style="color: #ffffff" class="fa fa-instagram"></span>
+                       <a id="insta" class="hvr-bob btn btn-social-icon btn-lg">
+                           <span class="fa fa-instagram"></span>
                        </a>
-                       <a class="btn btn-social-icon btn-linkedin">
-                           <span style="color: #ffffff" class="fa fa-linkedin"></span>
+                       <a id="lkd" class="hvr-bob btn btn-social-icon btn-lg">
+                           <span class="fa fa-linkedin"></span>
                        </a>
-                       <a class="btn btn-social-icon btn-pinterest">
-                           <span style="color: #ffffff" class="fa fa-youtube"></span>
+                       <a id="youtube" class="hvr-bob btn btn-social-icon btn-lg">
+                           <span class="fa fa-youtube"></span>
                        </a>
+
                    </div>
+
 
                </div>
     </div>
@@ -76,52 +89,48 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
-
                         </button>
-
-
                      </div>
-
-
 
             <!-- menu responsivo icon-->
             <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
 
-                <ul class="nav navbar-nav centralizado col-md-8 col-md-offset-1 ">
+                <ul class="nav navbar-nav centralizado col-md-6 col-md-offset-1 ">
 
                     <li class="nav">
-                        <a href="index.html"><i class="glyphicon glyphicon-home white"></i> Home</a>
+                        <a href="index.html">Home</a>
                     </li>
 
                     <li class="nav">
-                        <a href="sobre.html"><i class="glyphicon glyphicon-book white"></i> Sobre</a>
+                        <a href="sobre.html">Sobre</a>
                     </li>
 
-                    <li class="nav active" id="saude">
-                        <a href="#"><i class="glyphicon glyphicon-heart white"></i> Saúde</a>
-                    </li>
-
-                    <li class="nav">
-                        <a><i class="glyphicon glyphicon-alert white"></i> Treino </a>
+                    <li class="nav" id="saude">
+                        <a href="pages/saude/saude1.html">Saúde</a>
                     </li>
 
                     <li class="nav">
-                        <a><i class="glyphicon glyphicon-picture white"></i> Fotos</a>
+                        <a href="pages/treino/treino1.html">Treino </a>
                     </li>
 
                     <li class="nav">
-                        <a> <i class="glyphicon glyphicon-film white"></i> Vídeos</a>
+                        <a>Fotos</a>
+                    </li>
+
+                    <li class="nav">
+                        <a>Vídeos</a>
                     </li>
 
                     <li class="nav "id="evento">
-                        <a><i class="glyphicon glyphicon-star white"></i> Eventos</a>
+                        <a href="pages/evento/eventos1.html">Eventos</a>
                     </li>
 
                     <li class="nav">
-                        <a><i class="glyphicon glyphicon-earphone white"></i> Contatos</a>
+                        <a>Contatos</a>
                     </li>
 
                 </ul>
+
             </div>
             <!-- /.navbar-collapse -->
        </nav>
@@ -149,6 +158,7 @@
                         Nossos profissionais são graduados em Educação Física e pós graduados em fisiologia do exercício.
                         </p>
 
+
                         <div class="col-md-12">
                             <div class="col-md-6">
                                 <h4 > <span class="glyphicon glyphicon-screenshot"></span> - Missão </h4>
@@ -171,116 +181,143 @@
                                 </p>
                             </div>
 
+                            <!--plugin face-->
+                            <div style="padding-bottom: 2%" class="col-md-12 ">
+                                <div class="fb-share-button" data-href="https://www.facebook.com/profile.php?id=100010320933347" data-layout="button_count">
+                                </div>
+                                <div class="fb-follow" data-href="https://www.facebook.com/profile.php?id=100010320933347" data-layout="button_count" data-show-faces="false">
+                                </div>
+                            </div>
+
+                            <!--fim plugin face-->
                         </div>
                     </div>
                 </div>
-            </div>
+
+        </div>
 
         </header>
+
     <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-below">
-            <div class="container">
-                <div class="col-md-12">
-                    <div  style="border-right: 1px  solid; padding-bottom: 2.7%" class="col-md-6 visible-lg">
-                        <ul class="navbar-footer">
 
-                            <li class="nav">
-                                <a href="index.html">Home</a>
-                            </li>
+<footer class="text-center">
+    <div class="footer-below">
+        <div class="container">
+            <div class="col-md-12">
+                <div  style="border-right: 1px  solid; padding-bottom: 2.7%" class="col-md-6 visible-lg">
+                    <ul class="navbar-footer">
 
-                            <li class="nav">
-                                <a href="sobre.html">Sobre</a>
-                            </li>
+                        <li class="nav">
+                            <a href="index.html">Home</a>
+                        </li>
 
-                            <li class="nav">
-                                <a>Saúde </a>
-                            </li>
+                        <li class="nav">
+                            <a href="sobre.html">Sobre</a>
+                        </li>
 
-                            <li class="nav">
-                                <a >Treino </a>
-                            </li>
+                        <li class="nav">
+                            <a>Saúde </a>
+                        </li>
 
-                            <li class="nav">
-                                <a>Fotos</a>
-                            </li>
+                        <li class="nav">
+                            <a href="pages/treino/treino1.html" >Treino </a>
+                        </li>
 
-                            <li class="nav">
-                                <a>Vídeos</a>
-                            </li>
+                        <li class="nav">
+                            <a>Fotos</a>
+                        </li>
 
-                            <li class="nav">
-                                <a>Eventos</a>
-                            </li>
+                        <li class="nav">
+                            <a>Vídeos</a>
+                        </li>
 
-                            <li class="nav">
-                                <a>Contatos</a>
-                            </li>
+                        <li class="nav">
+                            <a>Eventos</a>
+                        </li>
 
-                        </ul>
-                    </div >
-                    <div class="col-md-6">
+                        <li class="nav">
+                            <a>Contatos</a>
+                        </li>
+
+                    </ul>
+                </div >
+                <div class="col-md-6">
 
 
-                        <p>Redes sociais:</p>
+                    <p>Redes sociais:</p>
 
-                        <a class="btn btn-social-icon btn-lg btn-twitter">
-                            <span class="fa fa-twitter"></span>
-                        </a>
-                        <a class="btn btn-social-icon btn-lg btn-facebook">
-                            <span class="fa fa-facebook"></span>
-                        </a>
-                        <a class="btn btn-social-icon btn-lg btn-instagram">
-                            <span class="fa fa-instagram"></span>
-                        </a>
-                        <a class="btn btn-social-icon btn-lg btn-linkedin">
-                            <span class="fa fa-linkedin"></span>
-                        </a>
-                        <a class="btn btn-social-icon btn-lg btn-pinterest">
-                            <span class="fa fa-youtube"></span>
-                        </a>
-
-                    </div>
+                    <a class="btn btn-social-icon btn-lg btn-twitter">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-lg btn-facebook">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-lg btn-instagram">
+                        <span class="fa fa-instagram"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-lg btn-linkedin">
+                        <span class="fa fa-linkedin"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-lg btn-pinterest">
+                        <span class="fa fa-youtube"></span>
+                    </a>
 
                 </div>
+
             </div>
-            <hr>
-            <!--final container 1-->
-            <div class="container col-md-12 text-center ">
-                desenvolvido por softweb 2016
-                <a href="">
-                    <span class="fa fa-github"></span>
-                </a>
+        </div>
+        <hr>
+        <!--final container 1-->
+        <div style="background-color: #233140" class="container col-md-12 text-center ">
+            <div>
+                todos os direitos reservados a f2d
+                <br>
+                    <span>
+                        desenvolvido por softweb 2016
+                        <a href="">
+                            <span class="fa fa-github"></span>
+                        </a>
+                    </span>
+
+
             </div>
 
         </div>
-        <!--final footer-below-->
-        </div>
-    </footer>
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    </div>
+    <!--final footer-below-->
+    </div>
+</footer>
 
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/freelancer.js"></script>
 
 </body>
 
 </html>
 
-    
-    
+
+
+
+
+
     
     
     
