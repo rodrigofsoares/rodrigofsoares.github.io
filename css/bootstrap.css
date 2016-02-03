@@ -5061,18 +5061,22 @@ a.badge:focus {
     font-size: 67.5px;
   }
 }
+
+
 .thumbnail {
   display: block;
-  padding: 4px;
+  padding:8px;
   margin-bottom: 21px;
   line-height: 1.42857143;
   background-color: #ffffff;
-  border: 1px solid #ecf0f1;
+  border: 2px solid #cfd3d4;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
   -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
 }
+
+
 .thumbnail > img,
 .thumbnail a > img {
   margin-left: auto;
@@ -5081,7 +5085,10 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #18bc9c;
+  border: 2px solid transparent;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+
+
 }
 .thumbnail .caption {
   padding: 9px;

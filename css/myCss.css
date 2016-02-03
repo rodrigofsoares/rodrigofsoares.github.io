@@ -603,6 +603,15 @@ div hr.linhaMenu{
      -moz-box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.5); 
           box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.5);
       }
+
+.polaroid2{
+    border:10px solid #fff;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.5);
+}
+
 p{
     text-align: justify;
 
@@ -633,10 +642,18 @@ background-color: #CB2027;
 }
 
 
-@media (min-width: 420px){
+@media (min-width: 4200px){
 
     #iconeRodape > a{
         margin-right:2%;
 
 }
+}
+@media(max-width: 767px) {
+
+    .video-container {
+        padding-top:47px;
+
+
+    }
 }
