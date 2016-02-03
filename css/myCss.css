@@ -154,7 +154,7 @@ header .container {
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 1%px;
+        padding-top: 1%;
 
     }
 
@@ -205,7 +205,7 @@ header .container {
         font-size: 1.5em;
     }
 */
-}
+
 
 .navbar {
     text-transform: uppercase;
@@ -385,15 +385,11 @@ margin-top: 10px;
     transition: top .3s ease,opacity .3s ease;
 }
 
-.floating-label-form-group::not(:first-child) {
-    padding-left: 14px;
-    border-left: 1px solid #eee;
-}
 
-.floating-label-form-group-with-value label {
-    top: 0;
-    opacity: 1;
-}
+/*.floating-label-form-group-with-value label {*/
+    /*top: 0;*/
+    /*opacity: 1;*/
+/*}*/
 
 .floating-label-form-group-with-focus label {
     color: #18bc9c;
@@ -634,4 +630,13 @@ background-color: #007bb6;
 }
 a#youtube :hover{
 background-color: #CB2027;
+}
+
+
+@media (min-width: 420px){
+
+    #iconeRodape > a{
+        margin-right:2%;
+
+}
 }

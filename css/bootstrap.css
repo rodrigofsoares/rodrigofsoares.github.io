@@ -1129,14 +1129,6 @@ img {
   height: auto;
 }
 
-.img-responsive2,
- {
-  display: block;
-  max-width: 30%;
-  height: auto;
-}
- 
-
 .img-rounded {
   border-radius: 6px;
 }
@@ -4252,7 +4244,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
-  margin-right: -15px;
+  margin-right: -5px;
   margin-left: -15px;
 }
 @media (min-width: 768px) {
@@ -6767,7 +6759,11 @@ button.close {
 .navbar-footer > li > a {
   font-size: 14px;
   color:#999;
+  margin: 2%;
+  padding-right: 16%;
+  padding-left: 16%;
 }
+
 
 .navbar-footer > li > a:hover{
   color: #ffffff;
@@ -7024,7 +7020,7 @@ a.list-group-item-danger.active:focus {
 .saude{
 color: #128f76;
 }
-.fisico{
+.treino{
 color:#217dbb;    
 }
 .evento{
