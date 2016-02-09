@@ -657,3 +657,15 @@ background-color: #CB2027;
 
     }
 }
+
+
+section#fotosPage{
+    margin-top: 4.5%;
+}
+
+
+@media(max-width: 967px) {
+    section#fotosPage{
+        margin-top: 1%;
+    }
+}
