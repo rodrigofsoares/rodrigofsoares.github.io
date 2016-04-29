@@ -7050,7 +7050,6 @@ color: #f39c12;
   font-size:1.7em;
   font-weight:bold;
 }
-
 .titulos{
   font-size:1.1em;
   font-weight:bold;
@@ -7062,11 +7061,33 @@ color: #f39c12;
     font-size:1.4em;
     font-weight:bold;
   }
-
 }
-
 h1.titulosAlbuns{
 
   font-size: 3em;
   font-weight: bold;
+}
+
+
+.subTitulos{
+  color: #acb6c0;
+  font-size:0.8em;
+  font-weight:100;
+  padding-bottom: 2%;
+  font-style: italic;
+}
+
+@media (min-width: 380px){
+  .subTitulos{
+    font-size:1em;
+  }
+
+}
+
+.legendas{
+  color: #acb6c0;
+  font-size:0.8em;
+  font-weight:100;
+  padding-bottom: 2%;
+  font-style: italic;
 }
